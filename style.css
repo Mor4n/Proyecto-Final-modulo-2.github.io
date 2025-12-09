@@ -1,3 +1,38 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{ 
+    padding: 25px 35px;
+    background-color: #2D3436;
+    color: #FEFEFE;
+
+    
+}
+
+li a{
+    color: #FEFEFE;
+    
+}
+
+li a:hover{
+    color: #6C5CE7
+}
+
+#navegacion li{
+    margin-top: 5px;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+body{
+    /* Fuente de google fonts que puse en HTML */
+    font-family: "Open Sans", sans-serif;
+    background-color: #F4F6F8;
+}
 
 .producto-tarjeta{
     width: 270px;
@@ -7,6 +42,17 @@
     margin:35px;
     display: inline-block;
 }
+.producto-tarjeta:hover{
+    transform: translateY(-10px);
+    transition: 0.7s;
+}
+
+
+/* Espaciado para que no quede todo junto */
+section{
+    margin: 25px 20px;
+}
+
 
 .producto-img{
     /* creo que esto es para que tome todo 
@@ -23,30 +69,20 @@
     
 }
 
-
-#navegacion li a{
-    color: blue;
-    
-}
-
-#navegacion li a:hover{
-    color: #6C5CE7
-}
-
-#navegacion li{
-    margin-top: 5px;
-    margin-left: 35px;
-}
-
-
 .producto-titulo{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 .producto-info{
     font-size: 14px;
     color: blueviolet;
+}
+
+.producto-precio{
+    color: #6C5CE7;
+    font-weight: bold;
 }
 
 .producto-btn{
@@ -69,5 +105,26 @@
 }
 
 .producto-btn:hover{
-    background-color: red;
+    background-color: #6C5CE7;
+}
+
+
+
+
+#contacto{
+    border-radius: 30px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    background-color: #2D3436;
+    color: white;
+}
+
+.contacto-info{
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: #2d3436;
+    color: #FEFEFE;
+
 }
