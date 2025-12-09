@@ -5,13 +5,35 @@
     box-sizing: border-box;
 }
 
-header{ 
+
+.top-banner{
+    background-color: #b6c8ff;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 14px;
+    color: #6d4c41;
+}
+
+#navegacion{ 
     padding: 25px 35px;
     background-color: #2D3436;
     color: #FEFEFE;
-
+    margin: 0 auto; /*revisar esto*/
+    position: sticky; 
+    /* ya no static, ya es stickuy */
+    top: 0;/*queremos que se quede pegado en la parte de arriba, le ponemos top 0 porque 0 es el elemento padre*/
+    z-index: 1000; 
+    /* El z-index se pone lo mas alto posible para qu NADA se superponga al nav */
     
 }
+
+
+#navegacion li{
+    margin-top: 5px;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
 
 li a{
     color: #FEFEFE;
@@ -22,16 +44,16 @@ li a:hover{
     color: #6C5CE7
 }
 
-#navegacion li{
-    margin-top: 5px;
-    margin-left: 15px;
-    list-style-type: none;
-}
 
 body{
     /* Fuente de google fonts que puse en HTML */
     font-family: "Open Sans", sans-serif;
     background-color: #F4F6F8;
+}
+
+/* Espaciado para que no quede todo junto */
+section{
+    margin: 25px 20px;
 }
 
 .producto-tarjeta{
@@ -41,16 +63,12 @@ body{
     text-align: center;
     margin:35px;
     display: inline-block;
+    /* Se pone position relative para que la badge absoluta se meta adentro */
+    position: relative;
 }
 .producto-tarjeta:hover{
     transform: translateY(-10px);
     transition: 0.7s;
-}
-
-
-/* Espaciado para que no quede todo junto */
-section{
-    margin: 25px 20px;
 }
 
 
@@ -108,6 +126,39 @@ section{
     background-color: #6C5CE7;
 }
 
+
+.producto-badge{
+    position: absolute;
+    background-color: red;
+    top: 10px;
+    left: 10px;
+    padding: 5px 12px;
+    border-radius: 15px;
+    color: white;
+}
+
+/* botón flotante posicion fixed */
+
+.boton-carrito{
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(37, 116, 116);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    
+    /* transition para el hover */
+    transition: .2s ease;
+
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+
+    /* se pone el z index para que se pueda visualizar FRENTE DE TOD */
+    z-index: 1500;
+}
 
 
 
