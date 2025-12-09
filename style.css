@@ -1,0 +1,57 @@
+
+.producto-tarjeta{
+    width: 270px;
+    background-color:darkgrey;
+    border-radius: 20px;
+    text-align: center;
+    margin:35px;
+    display: inline-block;
+}
+
+.producto-img{
+    /* creo que esto es para que tome todo 
+    el tamaño de la tarjeta */
+    width: 100%; 
+    height: 200px;
+    padding-top: 30px;
+
+    /* object-fit solo es para imagenes
+    
+    cover:va a cubrir toda la cubierta sin importar de que este
+    lo corta */
+    object-fit: contain;
+    
+}
+
+.producto-titulo{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.producto-info{
+    font-size: 14px;
+    color: blueviolet;
+}
+
+.producto-btn{
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+    /* aqui si es recomendable poner un padding pq
+    no tiene mucho espacio  */
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+    
+    
+    /* esto es para que el hover se vea un 
+    poquito más lento de animación */
+    transition:0.3s; 
+
+}
+
+.producto-btn:hover{
+    background-color: red;
+}
