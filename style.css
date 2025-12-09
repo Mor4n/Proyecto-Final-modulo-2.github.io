@@ -23,6 +23,22 @@
     
 }
 
+
+#navegacion li a{
+    color: blue;
+    
+}
+
+#navegacion li a:hover{
+    color: #6C5CE7
+}
+
+#navegacion li{
+    margin-top: 5px;
+    margin-left: 35px;
+}
+
+
 .producto-titulo{
     font-size: 25px;
     font-weight: bold;
