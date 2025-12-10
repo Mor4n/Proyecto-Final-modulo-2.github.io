@@ -203,11 +203,30 @@ section{
 }
 
 
+
 .contacto-form{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
+.contacto-form input{
+    height: 90px;
+    width: 350px;
+}
+
+.contacto-form button{
+    height: 40px;
+    border-radius: 90px;
+    background-color: #6C5CE7;
+    border: none;
+    color: white;
+    
+}
+.contacto-form button:hover{
+    background-color: #6d4c41
+}
+
 
 footer{
     background-color: #2d3436;
