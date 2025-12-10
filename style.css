@@ -25,13 +25,24 @@
     z-index: 1000; 
     /* El z-index se pone lo mas alto posible para qu NADA se superponga al nav */
     
+    /* Agregando flexbox */
+    /* como es contenedor padre de toda nuestra barra de navegacion haecmos */
+    display: flex;
+    /* quiero que el contenedor se vuelva flexible, las cosas como el h1 o el li ahora se van hacia la derecha */
+    justify-content: space-between; /*alineacion eje principal (horizontal)*/
+    align-items: center;/*alineacion eje cruzado (vert)*/
+    flex-wrap: wrap; /*permite salto de linea para pantallas pequeñas*/
 }
 
 
-#navegacion li{
-    margin-top: 5px;
-    margin-left: 15px;
+
+.navegacion-lista{
     list-style-type: none;
+    /* vuelvo flexible al contenedor padre */
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+
 }
 
 
