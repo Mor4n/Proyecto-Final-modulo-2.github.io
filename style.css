@@ -76,10 +76,21 @@ section{
     display: inline-block;
     /* Se pone position relative para que la badge absoluta se meta adentro */
     position: relative;
+
+    flex: 1 1 240px;
+    /* ocupa minimo 240px en lo que pueda encoger o crecer */
 }
 .producto-tarjeta:hover{
     transform: translateY(-10px);
     transition: 0.7s;
+}
+
+.catalogo-contenedor{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 
@@ -173,7 +184,17 @@ section{
 
 
 
+.contacto-info{
+    margin-bottom: 30px;
+}
+
+
 #contacto{
+    display: flex;
+    gap:20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
     border-radius: 30px;
     padding-left: 100px;
     padding-bottom: 20px;
@@ -181,8 +202,11 @@ section{
     color: white;
 }
 
-.contacto-info{
-    margin-bottom: 30px;
+
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer{
