@@ -184,6 +184,102 @@ section{
 
 
 
+/* Sección de equipo */
+
+.equipo-section{
+    text-align: center;
+    padding: 40px 25px;
+}
+.equipo-section h2{
+    margin-bottom: 15px;
+}
+.equipo-section p{
+    margin: 0 auto 20px;
+    /* poner maximo de texto con max-width */
+    max-width: 700px; 
+
+}
+
+.equipo-contenedor{
+    /* ponerlo horizontal com flex */
+    display: flex;
+
+    /* ponerlo que se vayan hacia abajo */
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    /* espacio entre tarjetas */
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+.equipo-card{
+    background-color: #eea1a1;
+    width: 280px;
+    padding: 60px 20px 30px ;
+    border-radius: 30px;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    /* flexbox interno de la tarjeta */
+    display: flex;
+    /* no quiero que esté como row por default, sino como column */
+    flex-direction: column;
+    /* centrarlo de forma interna tmb */
+    align-items: center;
+
+    /* esto es para hacer el circulito arriba, el padre debe ser relative */
+    position: relative;
+    margin-top:100px
+}
+
+.equipo-foto{
+
+    width: 140px;
+    height: 140px;
+    /* para no deformar la imagen: */
+    object-fit: cover;
+
+    /* hacerla circular */
+    border-radius: 50%;
+    border: 5px solid white;
+
+    /* esto para moverlo arriba */
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.equipo-titulo{
+    margin-top: 15px;
+    color: white;
+    font-size: 19px;
+}
+
+.equipo-rol{
+    font-size: 14px;
+    color: #2d3436;
+    margin: 5px;
+}
+
+
+.equipo-descripcion{
+    font-size: 14px;
+    color: #000000;
+    margin: 5px;
+    line-height: 1;
+
+}
+
+
+
+
+
+
+/* Parte de contacto */
+
 .contacto-info{
     margin-bottom: 30px;
 }
