@@ -147,13 +147,35 @@ section{
     padding:10px 0px;
 }
 
+/* este para que se puedan poner a la par producto precio y el descuento */
+.producto-precios-div{
+    display: flex;
+}
+
+.producto-descuento{
+    color: red;
+    font-size: 25px;
+    padding-left: 15px;
+}
+
 .producto-precio{
     color: #6C5CE7;
     font-weight: bold;
     padding-bottom: 10px;
+    padding-left: 15px;
+    text-align: left;
+    font-size: 23px;
+}
+.producto-precio-anterior{
+    display: flex;
+    font-size: 15px;
+    margin: 5px 0px 15px 15px;
+    color: rgb(80, 79, 79);
 }
 
 .producto-btn{
+    width: 70%;
+
     background-color: green;
     color: whitesmoke;
     border: none;
