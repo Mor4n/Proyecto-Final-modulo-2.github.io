@@ -43,6 +43,8 @@ header,main{
     z-index: 1000; 
     /* El z-index se pone lo mas alto posible para qu NADA se superponga al nav */
     
+
+
     /* Agregando flexbox */
     /* como es contenedor padre de toda nuestra barra de navegacion haecmos */
     display: flex;
@@ -64,37 +66,21 @@ header,main{
 }
 
 
-li a{
+.navegacion-lista a{
     color: #FEFEFE;
     text-decoration: none;
+    transition: .25s;
 }
 
-li a:hover{
-    color: #6C5CE7
+.navegacion-lista a:hover{
+    color: #6C5CE7;
+    
 }
 
 
 /* Espaciado para que no quede todo junto */
 section{
     margin: 25px 20px;
-}
-
-.producto-tarjeta{
-    width: 270px;
-    background-color:darkgrey;
-    border-radius: 20px;
-    text-align: center;
-    margin:35px;
-    display: inline-block;
-    /* Se pone position relative para que la badge absoluta se meta adentro */
-    position: relative;
-
-    flex: 1 1 240px;
-    /* ocupa minimo 240px en lo que pueda encoger o crecer */
-}
-.producto-tarjeta:hover{
-    transform: translateY(-10px);
-    transition: 0.7s;
 }
 
 .catalogo-contenedor{
@@ -104,6 +90,31 @@ section{
     gap: 20px;
     justify-content: center;
 }
+
+.producto-tarjeta{
+    background-color:darkgrey;
+    border-radius: 20px;
+    text-align: center;
+    margin:35px;
+    
+    overflow: hidden;
+    box-shadow: 7px 10px 15px rgba(0,0,0,0.15);
+    transition: box-shadow .25s ease,transform .25s ease ;
+
+    padding-bottom: 15px;
+    box-shadow: 0px;
+    /* Se pone position relative para que la badge absoluta se meta adentro */
+    position: relative;
+
+    flex: 1 1 240px;
+    /* ocupa minimo 240px en lo que pueda encoger o crecer */
+}
+.producto-tarjeta:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 6px 7px rgba(0,0,0,0.15);
+}
+
+
 
 
 .producto-img{
@@ -169,29 +180,6 @@ section{
     padding: 5px 12px;
     border-radius: 15px;
     color: white;
-}
-
-/* botón flotante posicion fixed */
-
-.boton-carrito{
-    padding: 10px;
-    border-radius: 30px;
-    color: white;
-    background-color: rgb(37, 116, 116);
-    font-weight: bold;
-    font-size: 16px;
-    text-decoration: none;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    
-    /* transition para el hover */
-    transition: .2s ease;
-
-    bottom: 25px;
-    right: 25px;
-    position: fixed;
-
-    /* se pone el z index para que se pueda visualizar FRENTE DE TOD */
-    z-index: 1500;
 }
 
 
@@ -287,6 +275,29 @@ section{
 
 
 
+/* botón flotante posicion fixed */
+
+.boton-carrito{
+    padding: 10px;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(37, 116, 116);
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    
+    /* transition para el hover */
+    transition: .2s ease;
+
+    bottom: 25px;
+    right: 25px;
+    position: fixed;
+
+    /* se pone el z index para que se pueda visualizar FRENTE DE TOD */
+    z-index: 1500;
+}
+
 
 
 
@@ -336,8 +347,31 @@ section{
 }
 
 
+/* pie de pagina */
 footer{
     background-color: #2d3436;
     color: #FEFEFE;
     padding: 25px 20px;
 }
+/* lista y enlaces de footer */
+.footer-lista{
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.footer-lista a{
+    text-decoration: none;
+    color: #FEFEFE;
+    transition: .25s;
+}
+
+.footer-lista a:hover{
+    color: #6C5CE7;
+    
+}
+
+#footer-copyright{
+    text-align: center;
+    font-size: 18px;
+}
+
