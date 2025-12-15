@@ -6,6 +6,23 @@
 }
 
 
+body{
+    /* Fuente de google fonts que puse en HTML */
+    font-family: "Open Sans", sans-serif;
+    color: #2D3436;
+    background-color: #F4F6F8;
+}
+
+/* limitación que me faltaba q-q no sé pq no estaba */
+
+
+header,main{
+    max-width: 1350px;  
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 .top-banner{
     background-color: #b6c8ff;
     text-align: center;
@@ -18,7 +35,8 @@
     padding: 25px 35px;
     background-color: #2D3436;
     color: #FEFEFE;
-    margin: 0 auto; /*revisar esto*/
+    max-width: 1350px; /*para que combine con el max-width en general de todo*/
+    margin: 0 auto; /*revisar esto */
     position: sticky; 
     /* ya no static, ya es stickuy */
     top: 0;/*queremos que se quede pegado en la parte de arriba, le ponemos top 0 porque 0 es el elemento padre*/
@@ -48,19 +66,13 @@
 
 li a{
     color: #FEFEFE;
-    
+    text-decoration: none;
 }
 
 li a:hover{
     color: #6C5CE7
 }
 
-
-body{
-    /* Fuente de google fonts que puse en HTML */
-    font-family: "Open Sans", sans-serif;
-    background-color: #F4F6F8;
-}
 
 /* Espaciado para que no quede todo junto */
 section{
