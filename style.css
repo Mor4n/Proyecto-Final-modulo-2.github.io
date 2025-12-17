@@ -24,17 +24,17 @@ header,main{
 
 
 .top-banner{
-    background-color: #b6c8ff;
+    background-color: #6C5CE7;
     text-align: center;
     padding: 6px 10px;
     font-size: 14px;
-    color: #6d4c41;
+    color: #FFFFFF;
 }
 
 #navegacion{ 
     padding: 25px 35px;
-    background-color: #2D3436;
-    color: #FEFEFE;
+    background-color: #6C5CE7;
+    color: #FFFFFF;
     max-width: 1350px; /*para que combine con el max-width en general de todo*/
     margin: 0 auto; /*revisar esto */
     position: sticky; 
@@ -73,7 +73,7 @@ header,main{
 }
 
 .navegacion-lista a:hover{
-    color: #6C5CE7;
+    color: #8fc7ff;
     
 }
 
@@ -92,7 +92,7 @@ section{
 }
 
 .producto-tarjeta{
-    background-color:darkgrey;
+    background-color:#FFFFFF;
     border-radius: 20px;
     text-align: center;
     margin:35px;
@@ -125,7 +125,7 @@ section{
     width: 100%; 
     height: 200px;
     padding: 30px;
-    background-color: #ffffff;
+    background-color: #fefefe;
 
     /* object-fit solo es para imagenes
     
@@ -156,14 +156,14 @@ section{
     color: red;
     font-size: 25px;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .producto-precio{
     color: #6C5CE7;
     font-weight: bold;
     padding-bottom: 10px;
-    padding-left: 15px;
-    text-align: left;
+    text-align: center;
     font-size: 23px;
 }
 .producto-precio-anterior{
@@ -201,7 +201,7 @@ section{
 
 .producto-badge{
     position: absolute;
-    background-color: red;
+    background-color: #FF7675;
     top: 10px;
     left: 10px;
     padding: 5px 12px;
