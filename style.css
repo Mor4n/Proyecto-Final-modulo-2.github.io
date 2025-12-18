@@ -339,8 +339,7 @@ section{
     border-radius: 30px;
     padding-left: 100px;
     padding-bottom: 20px;
-    background-color: #2D3436;
-    color: white;
+
 }
 
 
@@ -364,6 +363,11 @@ para que crezcan y se encojan de igual forma los elementos
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    
+    background-color: #2D3436;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .contacto-form input {
