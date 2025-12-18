@@ -328,12 +328,7 @@ section{
 
 
 
-/* Parte de contacto */
-
-.contacto-info{
-    margin-bottom: 30px;
-}
-
+/* Parte de contacto o formulario */
 
 #contacto{
     display: flex;
@@ -349,20 +344,46 @@ section{
 }
 
 
+.contacto-info{
+    margin-bottom: 30px;
+}
+/* el flex-grow en 1 y flex shrin en 1, flex basis en 270px
+en todo caso, 1 es q crezca normal o se encoja normal, entonces 1 - 1 es
+para que crezcan y se encojan de igual forma los elementos
+*/
+.contacto-info,
+.contacto-form-div{
+    flex: 1 1 280px;
+}
+
+
+
 
 .contacto-form{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
-.contacto-form input{
+.contacto-form input {
+    height: 40px;
+    width: 320px;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+}
+#solicitud{
+    width: 320px;
     height: 90px;
-    width: 350px;
+    border-radius: 15px;
+    padding: 10px;
+    border: none;
 }
 
 .contacto-form button{
     height: 40px;
+    width: 320px;
     border-radius: 90px;
     background-color: #6C5CE7;
     border: none;
@@ -372,6 +393,7 @@ section{
 .contacto-form button:hover{
     background-color: #6d4c41
 }
+
 
 
 /* pie de pagina */
