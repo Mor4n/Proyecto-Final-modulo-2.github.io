@@ -498,7 +498,6 @@ footer{
         justify-content: center;
         gap:12px;
         padding: 12px 14px;
-        flex-wrap: wrap;
     }
     /* que se pase hacia arriba para que se acomode mejor */
     .logo{
@@ -512,6 +511,18 @@ footer{
         justify-content: center;
         flex-wrap: wrap;
         gap:12px 16px;
+        font-size: 18px;
 
     }
+    .producto-precios-div{
+        flex-wrap: wrap;
+    }
+    .boton-carrito{
+        border-radius: 16px;
+        padding: 10px 14px;
+        font-size: 14px;
+        right: 100px;
+        bottom: 16px;
+    }
+
 }
