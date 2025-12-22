@@ -331,15 +331,31 @@ section{
     /* se pone el z index para que se pueda visualizar FRENTE DE TOD */
     z-index: 1500;
 }
+.boton-carrito:hover{
+    background-color: rgb(28, 90, 90);
+
+}
+
 .boton-subir{
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-color: rgb(37, 116, 116);
     display: block;
+    border-radius: 30px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
+    transition: .2s;
 }
+
+.boton-subir:hover{
+    background-color: rgb(28, 90, 90);
+
+}
+
 #img-boton-subir{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
+    margin-left: 5px;
+    margin-top: 2px;
     object-fit: cover;
 }
 
