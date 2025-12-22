@@ -324,12 +324,13 @@ section{
     /* transition para el hover */
     transition: .2s ease;
 
-    bottom: 25px;
+    bottom: 13px;
     right: 25px;
     position: fixed;
 
     /* se pone el z index para que se pueda visualizar FRENTE DE TOD */
     z-index: 1500;
+    cursor: pointer;
 }
 .boton-carrito:hover{
     background-color: rgb(28, 90, 90);
@@ -344,6 +345,11 @@ section{
     border-radius: 30px;
     box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
     transition: .2s;
+    bottom: 13px;
+    left: 25px;
+    z-index: 1500;
+    position: fixed;
+    cursor: pointer;
 }
 
 .boton-subir:hover{
