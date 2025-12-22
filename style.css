@@ -335,6 +335,7 @@ section{
     width: 50px;
     height: 50px;
     background-color: black;
+    display: block;
 }
 #img-boton-subir{
     width: 100%;
