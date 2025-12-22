@@ -54,6 +54,13 @@ header,main{
     flex-wrap: wrap; /*permite salto de linea para pantallas pequeñas*/
 }
 
+#logo{
+    height: 70px;
+}
+#logo-img{
+    height: 100%;
+    object-fit: cover;
+}
 
 
 .navegacion-lista{
@@ -397,6 +404,7 @@ para que crezcan y se encojan de igual forma los elementos
 .contacto-form button:hover{
     background-color: #6d4c41
 }
+
 
 
 
