@@ -75,18 +75,26 @@ header,main{
 }
 #buscar-input{
     width: 100%;
-    margin-right: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
 }
 #buscar-boton{
     background: none;
     border: none;
     background-color: #5543e0;
-    width: 50px;
-    border-radius: 30px;
+    width: auto;
+    border-radius: 100px;
+    cursor: pointer;
+    padding: 10px;
+}
+#buscar-boton:hover{
+    background-color: #4330d4;
 }
 #buscar-imagen{
-    width: 100%;
-    height: 100%;
+    width: 25px;
+    height: 25px;
     object-fit: cover;
 }
 
