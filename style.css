@@ -87,6 +87,17 @@ header,main{
     
 }
 
+#video-contenedor{
+    display: flex;
+    justify-content: center;
+    height:  80vh;
+}
+
+#video-tienda{
+    height: 100%;
+}
+
+
 
 /* Espaciado para que no quede todo junto */
 section{
