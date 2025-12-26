@@ -66,6 +66,30 @@ header,main{
     object-fit: cover;
 }
 
+
+.buscar-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+#buscar-input{
+    width: 100%;
+    margin-right: 20px;
+}
+#buscar-boton{
+    background: none;
+    border: none;
+    background-color: #5543e0;
+    width: 50px;
+    border-radius: 30px;
+}
+#buscar-imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .navegacion-lista{
     list-style-type: none;
     /* vuelvo flexible al contenedor padre */
