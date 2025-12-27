@@ -152,10 +152,7 @@ header,main{
     font-size: 50px;
     border: 4px black solid;
     font-weight: bold;
-}
-
-#video-texto-fondo{
-    
+    box-shadow: 10px 10px 0px rgb(255, 0, 0);
 }
 
 
