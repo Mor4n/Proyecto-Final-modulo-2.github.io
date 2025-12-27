@@ -146,10 +146,19 @@ header,main{
 
 #video-texto{
     margin: 0 21%;
-    color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 15px 30px;
+    background-color: #FEFEFE;
     font-size: 50px;
+    border: 4px black solid;
     font-weight: bold;
 }
+
+#video-texto-fondo{
+    
+}
+
+
 
 #video-tienda{
     width: 100%;
