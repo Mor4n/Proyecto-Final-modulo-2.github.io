@@ -67,6 +67,29 @@ header,main{
 }
 
 
+.navegacion-lista{
+    list-style-type: none;
+    /* vuelvo flexible al contenedor padre */
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+
+}
+
+
+.navegacion-lista a{
+    color: #FEFEFE;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.navegacion-lista a:hover{
+    color: #8fc7ff;
+    
+}
+
+
+
 .buscar-contenedor{
     display: flex;
     align-items: center;
@@ -96,27 +119,6 @@ header,main{
     width: 25px;
     height: 25px;
     object-fit: cover;
-}
-
-.navegacion-lista{
-    list-style-type: none;
-    /* vuelvo flexible al contenedor padre */
-    display: flex; 
-    gap: 20px;
-    align-items: center;
-
-}
-
-
-.navegacion-lista a{
-    color: #FEFEFE;
-    text-decoration: none;
-    transition: .25s;
-}
-
-.navegacion-lista a:hover{
-    color: #8fc7ff;
-    
 }
 
 #video-contenedor{
