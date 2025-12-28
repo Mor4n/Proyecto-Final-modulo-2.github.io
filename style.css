@@ -361,30 +361,48 @@ section h2:hover{
 
 }
 .compra-contenedor{
- 
+    margin: 30px;
+    display: flex;
+
 }
 .compra-imagen{
-  
-
+    align-items: center;
+    margin-right: 25px;
 }
-#compra-img{
 
+#compra-img{
+box-shadow: 6px 6px 0px #000000;
+}
+#compra-img:hover{   
+    transform: translate(-2px,-2px);
+    transition: .35s ease;
+    box-shadow: 6px 6px 0px #e60012;
 }
 
 .compra-pasos{
+
 }
 #compra-lista{
 }
 .compra-paso{
-  
+    text-align: start;
+    margin: 20px;
+    font-size: 17px;
+
 }
 
 
 .lista-contenedor{
- 
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .lista-contenedor-imagen{
-   
+    width: 80px;
+    object-fit: contain;
 }
 
 
