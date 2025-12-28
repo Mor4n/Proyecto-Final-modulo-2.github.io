@@ -102,17 +102,19 @@ header,main{
     width: 100%;
     margin-right: 10px;
     padding: 10px;
-    border-radius: 50px;
     border: 2px #000000 solid;
 }
 #buscar-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: none;
     border: none;
     background-color: #e60012;
-    width: auto;
-    border-radius: 100px;
+    width: 50px;
     cursor: pointer;
-    padding: 10px;
+    padding: 6px;
+    border: 2px solid #000000;
 }
 #buscar-boton:hover{
     transition: ease .60s;
@@ -192,7 +194,6 @@ section h2:hover{
 .catalogo-contenedor h3{
     font-size: 25px;
     font-weight: 900;
-
 }
 
 .catalogo-productos{
