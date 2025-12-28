@@ -167,7 +167,10 @@ header,main{
 
 /* Espaciado para que no quede todo junto */
 section{
-    margin: 25px 20px;
+    background-color: white;
+    margin: 30px 20px;
+    padding: 25px;
+    text-align: center; 
 }
 
 section h2{
