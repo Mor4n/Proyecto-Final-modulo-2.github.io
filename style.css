@@ -179,12 +179,15 @@ section h2{
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: 900;
-
 }
 
 section h2:hover{
     text-decoration: underline red;
     text-decoration-thickness: 5px;
+}
+
+section p{
+    font-size: 20px;
 }
 
 .catalogo-contenedor{
@@ -391,11 +394,14 @@ section h2:hover{
 #compra-lista{
 }
 .compra-paso{
-    text-align: start;
+    text-align: justify;
     margin: 20px;
     font-size: 17px;
-
 }
+.compra-paso b{
+    color: #940410;
+}
+
 
 
 .lista-contenedor{
@@ -410,7 +416,10 @@ section h2:hover{
     width: 80px;
     object-fit: contain;
 }
-
+.lista-contenedor-imagen:hover{
+    border-bottom: 4px red solid;
+    transition: .2s ;
+}
 
 
 
@@ -425,12 +434,13 @@ section h2:hover{
 .sobre-contenedor-imagen{
     margin: 30px;
     display: flex;
-    
+    flex: 0 0 auto;
 
 }
 #sobre-imagen{
     box-shadow: 6px 6px 0px #000000;
     width: 100%;
+    max-width: 600px;
     object-fit: cover;
 }
 
@@ -441,9 +451,16 @@ section h2:hover{
 }
 
 .sobre-textos{
+    flex: 1 1 300px;
+    margin:30px;
+    text-align: justify;
 }
 .sobre-texto{
-
+    padding-bottom: 20px;
+    font-size: large;
+}
+.hoshi{
+    color: rgb(187, 187, 0);
 }
 
 
