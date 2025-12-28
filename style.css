@@ -290,13 +290,15 @@ section h2:hover{
 /* este para que se puedan poner a la par producto precio y el descuento */
 .producto-precios-div{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .producto-descuento{
     color: red;
     font-size: 25px;
-    padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 10px;
 }
 
 .producto-precio{
@@ -308,6 +310,7 @@ section h2:hover{
 }
 .producto-precio-anterior{
     display: flex;
+    justify-content: center;
     font-size: 15px;
     margin: 5px 0px 15px 15px;
     color: rgb(80, 79, 79);
@@ -318,7 +321,7 @@ section h2:hover{
 
     background-color: #e60012;
     color: whitesmoke;
-    border: 4px solid black;
+    border: 3px solid black;
     /* aqui si es recomendable poner un padding pq
     no tiene mucho espacio  */
     padding: 10px;
