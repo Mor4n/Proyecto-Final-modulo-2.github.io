@@ -186,6 +186,16 @@ section h2:hover{
 }
 
 .catalogo-contenedor{
+
+    margin: 2%;
+}
+.catalogo-contenedor h3{
+    font-size: 25px;
+    font-weight: 900;
+
+}
+
+.catalogo-productos{
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
