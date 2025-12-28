@@ -194,12 +194,29 @@ section h2:hover{
 
 .catalogo-categorias{
 
-}
-.catalogo-categoria{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+
 
 }
+.catalogo-categoria{
+    cursor: pointer;
+    padding: 20px;
+    border: 4px solid black;
+    margin: 20px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalogo-categoria:hover{
+    transition: .35s ease;
+    box-shadow: 10px 10px 0px rgb(255, 0, 0);
+}
 .catalogo-categoria-texto{
-    
+    font-weight: 900;
 }
 
 
