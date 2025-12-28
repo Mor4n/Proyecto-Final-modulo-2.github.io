@@ -364,15 +364,19 @@ section h2:hover{
 .compra-contenedor{
     margin: 30px;
     display: flex;
-
+    flex-wrap: wrap;
+    align-items: center;
 }
 .compra-imagen{
     align-items: center;
     margin-right: 25px;
+    flex: 0 0 auto;
 }
 
 #compra-img{
-box-shadow: 6px 6px 0px #000000;
+    box-shadow: 6px 6px 0px #000000;
+    width: 100%;
+    max-width: 600px;
 }
 #compra-img:hover{   
     transform: translate(-2px,-2px);
@@ -381,7 +385,8 @@ box-shadow: 6px 6px 0px #000000;
 }
 
 .compra-pasos{
-
+    
+    flex: 1 1 300px;
 }
 #compra-lista{
 }
@@ -408,7 +413,40 @@ box-shadow: 6px 6px 0px #000000;
 
 
 
-/* Sección de equipo */
+
+
+/* Sección de sobre nosotros */
+
+.sobre-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-contenedor-imagen{
+    margin: 30px;
+    display: flex;
+    
+
+}
+#sobre-imagen{
+    box-shadow: 6px 6px 0px #000000;
+    width: 100%;
+    object-fit: cover;
+}
+
+#sobre-imagen:hover{   
+    transform: translate(-2px,-2px);
+    transition: .35s ease;
+    box-shadow: 6px 6px 0px #e60012;
+}
+
+.sobre-textos{
+}
+.sobre-texto{
+
+}
+
+
 
 .equipo-section{
     text-align: center;
