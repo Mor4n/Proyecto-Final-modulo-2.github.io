@@ -176,6 +176,11 @@ section h2{
     font-weight: 900;
 }
 
+section h2:hover{
+    text-decoration: underline red;
+    text-decoration-thickness: 5px;
+}
+
 .catalogo-contenedor{
     padding: 20px;
     display: flex;
