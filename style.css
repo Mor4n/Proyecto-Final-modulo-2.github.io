@@ -221,9 +221,11 @@ section h2:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgb(0, 0, 0) 7px 10px 0px;
+    transition: box-shadow .25s ease,transform .25s ease ; 
 }
 .catalogo-categoria:hover{
-    transition: .35s ease;
+    transition: .25s ease;
     box-shadow: 10px 10px 0px rgb(255, 0, 0);
     transform: translate(-2px, -2px);
 }
@@ -253,7 +255,7 @@ section h2:hover{
 .producto-tarjeta:hover{
     transform: translateY(-10px);
     box-shadow: 10px 10px 0px #e60012;
-    transition: .25s;
+    transition: .25s ease;
 }
 
 
@@ -351,6 +353,38 @@ section h2:hover{
     color: white;
     font-weight: bold;
     font-size: 14px;
+}
+
+
+/* seccion de compra */
+#compra{
+
+}
+.compra-contenedor{
+ 
+}
+.compra-imagen{
+  
+
+}
+#compra-img{
+
+}
+
+.compra-pasos{
+}
+#compra-lista{
+}
+.compra-paso{
+  
+}
+
+
+.lista-contenedor{
+ 
+}
+.lista-contenedor-imagen{
+   
 }
 
 
