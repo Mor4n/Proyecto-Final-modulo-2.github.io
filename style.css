@@ -177,6 +177,7 @@ section h2{
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: 900;
+
 }
 
 section h2:hover{
@@ -214,6 +215,7 @@ section h2:hover{
 .catalogo-categoria:hover{
     transition: .35s ease;
     box-shadow: 10px 10px 0px rgb(255, 0, 0);
+    transform: translate(-2px, -2px);
 }
 .catalogo-categoria-texto{
     font-weight: 900;
