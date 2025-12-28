@@ -447,7 +447,7 @@ section p{
 #sobre-imagen:hover{   
     transform: translate(-2px,-2px);
     transition: .35s ease;
-    box-shadow: 6px 6px 0px #e60012;
+    box-shadow: 6px 6px 0px #ffb7c5;
 }
 
 .sobre-textos{
@@ -460,10 +460,19 @@ section p{
     font-size: large;
 }
 .hoshi{
-    color: rgb(187, 187, 0);
+    color: #bbbb00;
 }
 
 
+.equipo{
+    background-color: rgb(44, 44, 39);
+    text-align: center;
+    width: 35rem;
+    margin: 10rem 0 0 10rem;
+    border-radius: 1rem;
+    color: white;
+    
+}
 
 .equipo-section{
     text-align: center;
@@ -474,57 +483,171 @@ section p{
 }
 .equipo-section p{
     margin: 0 auto 20px;
-    /* poner maximo de texto con max-width */
+     /* poner maximo de texto con max-width  */
     max-width: 700px; 
 
 }
 
 .equipo-contenedor{
-    /* ponerlo horizontal com flex */
+    /*  ponerlo horizontal com flex  */
     display: flex;
 
-    /* ponerlo que se vayan hacia abajo */
+    /*  ponerlo que se vayan hacia abajo  */
     flex-wrap: wrap;
 
     justify-content: center;
 
-    /* espacio entre tarjetas */
+    /* espacio entre tarjetas  */
     gap: 40px;
 
     margin-top: 20px;
 }
 
 .equipo-card{
-    background-color: #eea1a1;
+    border: 4px solid #000000;
+    background-color: #ffffff;
     width: 280px;
     padding: 60px 20px 30px ;
-    border-radius: 30px;
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 6px 0px #6d6d6d;
     text-align: center;
-    /* flexbox interno de la tarjeta */
+    /* /* flexbox interno de la tarjeta  */
     display: flex;
-    /* no quiero que esté como row por default, sino como column */
+    /* /* no quiero que esté como row por default, sino como column  */
     flex-direction: column;
-    /* centrarlo de forma interna tmb */
+    /* /* centrarlo de forma interna tmb  */
     align-items: center;
 
-    /* esto es para hacer el circulito arriba, el padre debe ser relative */
+    /* /* esto es para hacer el circulito arriba, el padre debe ser relative  */
     position: relative;
     margin-top:100px
+}
+.equipo-card:hover{
+    transform: translate(-5px,-5px);
+    transition: .25s ease;
+    box-shadow: 6px 6px 0px #e60012;
+}
+.equipo-foto{
+    
+    width: 140px;
+    height: 140px;
+    /* /* para no deformar la imagen:  */
+    object-fit: contain;
+
+    /* /* hacerla circular  */
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+
+    /* /* esto para moverlo arriba  */
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.equipo-nombre{
+    font-size: 19px;
+    margin-top: 15px;
+    color: #2D3436;
+}
+
+.equipo-ubicacion{
+    font-size: 19px;
+    margin: 10px;
+}
+
+.equipo-rol{
+    margin-bottom: 1rem;
+    color: #940410;
+    font-style: italic;
+}
+
+.equipo-boton{
+    cursor: pointer;
+    background-color: #940410;
+    border: 2px solid black;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    font-size: medium;
+    font-weight: bold;
+    margin: 12px 0 12px 0;
+    text-decoration: none;
+}
+.equipo-boton:hover{
+    transform: translate(-2px,-2px);
+    transition: .25s ease;
+    background-color: #000000;
+}
+
+/* Tal vez deberia de borrarlo pero lo quiero dejar como notas para el futuro :( 
+
+.equipo-section{
+    text-align: center;
+    padding: 40px 25px;
+}
+.equipo-section h2{
+    margin-bottom: 15px;
+}
+.equipo-section p{
+    margin: 0 auto 20px;
+    /* poner maximo de texto con max-width 
+    max-width: 700px; 
+
+}
+
+.equipo-contenedor{
+    /* ponerlo horizontal com flex 
+    display: flex;
+
+    /* ponerlo que se vayan hacia abajo 
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    /* espacio entre tarjetas 
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+.equipo-card{
+    border: 4px solid #000000;
+    background-color: #ffffff;
+    width: 280px;
+    padding: 60px 20px 30px ;
+    box-shadow: 6px 6px 0px #6d6d6d;
+    text-align: center;
+    /* flexbox interno de la tarjeta 
+    display: flex;
+    /* no quiero que esté como row por default, sino como column 
+    flex-direction: column;
+    /* centrarlo de forma interna tmb 
+    align-items: center;
+
+    /* esto es para hacer el circulito arriba, el padre debe ser relative 
+    position: relative;
+    margin-top:100px
+}
+.equipo-card:hover{
+    box-shadow: 7px 12px 0px #bbbb00;
+    transform: translate(-2px,-2px);
+    transition: .35s ease;
+
 }
 
 .equipo-foto{
 
     width: 140px;
     height: 140px;
-    /* para no deformar la imagen: */
+    /* para no deformar la imagen: 
     object-fit: cover;
 
-    /* hacerla circular */
+    /* hacerla circular 
     border-radius: 50%;
-    border: 5px solid white;
+    border: 3px solid rgb(0, 0, 0);
 
-    /* esto para moverlo arriba */
+    /* esto para moverlo arriba 
     position: absolute;
     top: -70px;
     left: 50%;
@@ -533,7 +656,7 @@ section p{
 
 .equipo-titulo{
     margin-top: 15px;
-    color: white;
+    color: #2D3436;
     font-size: 19px;
 }
 
@@ -550,7 +673,7 @@ section p{
     margin: 5px;
     line-height: 1;
 
-}
+} */
 
 
 
