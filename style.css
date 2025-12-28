@@ -170,6 +170,12 @@ section{
     margin: 25px 20px;
 }
 
+section h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
 .catalogo-contenedor{
     padding: 20px;
     display: flex;
