@@ -22,6 +22,7 @@ header,main{
     margin: 0 auto;
 }
 
+/* la parte que está hasta arriba de envios gratis */
 
 .top-banner{
     background-color: #e60012;
@@ -31,6 +32,9 @@ header,main{
     font-weight: bold;
     color: #FFFFFF;
 }
+
+/* el menu de navegacion*/
+
 
 #navegacion{ 
     padding: 10px 35px;
@@ -66,7 +70,6 @@ header,main{
     object-fit: cover;
 }
 
-
 .navegacion-lista{
     list-style-type: none;
     /* vuelvo flexible al contenedor padre */
@@ -89,7 +92,7 @@ header,main{
     
 }
 
-
+/* partecita del buscador */
 
 .buscar-contenedor{
     display: flex;
@@ -125,6 +128,7 @@ header,main{
     height: 25px;
     object-fit: cover;
 }
+/* el vídeo que está abajo del nav */
 
 #video-contenedor{
     display: flex;
@@ -190,6 +194,8 @@ section p{
     font-size: 20px;
 }
 
+/* parte del catalogo de productos */
+
 .catalogo-contenedor{
 
     margin: 2%;
@@ -237,7 +243,7 @@ section p{
     font-weight: 900;
 }
 
-
+/* partecita de los productos (la tarjeta en si) */
 
 .producto-tarjeta{
     background-color:#FFFFFF;
@@ -347,7 +353,7 @@ section p{
     background-color: #000000;
 }
 
-
+/* OFERTOON */
 .producto-badge{
     position: absolute;
     background-color: #000000;
@@ -459,11 +465,12 @@ section p{
     padding-bottom: 20px;
     font-size: large;
 }
+/* esto es solo para cambiarle d color a dos textos xd */
 .hoshi{
     color: #bbbb00;
 }
 
-
+/* partecita de personas que forman parte del tim, está abajo esto de sobre nosotros pero en el mismo sobre nosotros */
 .equipo{
     background-color: rgb(44, 44, 39);
     text-align: center;
@@ -530,14 +537,14 @@ section p{
     
     width: 140px;
     height: 140px;
-    /* /* para no deformar la imagen:  */
+    /* para no deformar la imagen:  */
     object-fit: contain;
 
-    /* /* hacerla circular  */
+     /* hacerla circular  */
     border-radius: 50%;
     border: 3px solid rgb(0, 0, 0);
 
-    /* /* esto para moverlo arriba  */
+     /* esto para moverlo arriba  */
     position: absolute;
     top: -70px;
     left: 50%;
@@ -580,104 +587,7 @@ section p{
     background-color: #000000;
 }
 
-/* Tal vez deberia de borrarlo pero lo quiero dejar como notas para el futuro :( 
-
-.equipo-section{
-    text-align: center;
-    padding: 40px 25px;
-}
-.equipo-section h2{
-    margin-bottom: 15px;
-}
-.equipo-section p{
-    margin: 0 auto 20px;
-    /* poner maximo de texto con max-width 
-    max-width: 700px; 
-
-}
-
-.equipo-contenedor{
-    /* ponerlo horizontal com flex 
-    display: flex;
-
-    /* ponerlo que se vayan hacia abajo 
-    flex-wrap: wrap;
-
-    justify-content: center;
-
-    /* espacio entre tarjetas 
-    gap: 40px;
-
-    margin-top: 20px;
-}
-
-.equipo-card{
-    border: 4px solid #000000;
-    background-color: #ffffff;
-    width: 280px;
-    padding: 60px 20px 30px ;
-    box-shadow: 6px 6px 0px #6d6d6d;
-    text-align: center;
-    /* flexbox interno de la tarjeta 
-    display: flex;
-    /* no quiero que esté como row por default, sino como column 
-    flex-direction: column;
-    /* centrarlo de forma interna tmb 
-    align-items: center;
-
-    /* esto es para hacer el circulito arriba, el padre debe ser relative 
-    position: relative;
-    margin-top:100px
-}
-.equipo-card:hover{
-    box-shadow: 7px 12px 0px #bbbb00;
-    transform: translate(-2px,-2px);
-    transition: .35s ease;
-
-}
-
-.equipo-foto{
-
-    width: 140px;
-    height: 140px;
-    /* para no deformar la imagen: 
-    object-fit: cover;
-
-    /* hacerla circular 
-    border-radius: 50%;
-    border: 3px solid rgb(0, 0, 0);
-
-    /* esto para moverlo arriba 
-    position: absolute;
-    top: -70px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.equipo-titulo{
-    margin-top: 15px;
-    color: #2D3436;
-    font-size: 19px;
-}
-
-.equipo-rol{
-    font-size: 14px;
-    color: #2d3436;
-    margin: 5px;
-}
-
-
-.equipo-descripcion{
-    font-size: 14px;
-    color: #000000;
-    margin: 5px;
-    line-height: 1;
-
-} */
-
-
-
-/* botón flotante posicion fixed */
+/* botones laterales */
 
 .boton-carrito{
     padding: 10px;
@@ -732,6 +642,9 @@ section p{
     margin-top: 2px;
     object-fit: cover;
 }
+
+/* partecita de grid de galeria */
+
 
 
 
@@ -896,3 +809,110 @@ footer{
     }
 
 }
+
+
+
+
+
+
+
+
+
+/* Tal vez deberia de borrarlo pero lo quiero dejar como notas para el futuro :( 
+
+.equipo-section{
+    text-align: center;
+    padding: 40px 25px;
+}
+.equipo-section h2{
+    margin-bottom: 15px;
+}
+.equipo-section p{
+    margin: 0 auto 20px;
+    /* poner maximo de texto con max-width 
+    max-width: 700px; 
+
+}
+
+.equipo-contenedor{
+    /* ponerlo horizontal com flex 
+    display: flex;
+
+    /* ponerlo que se vayan hacia abajo 
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    /* espacio entre tarjetas 
+    gap: 40px;
+
+    margin-top: 20px;
+}
+
+.equipo-card{
+    border: 4px solid #000000;
+    background-color: #ffffff;
+    width: 280px;
+    padding: 60px 20px 30px ;
+    box-shadow: 6px 6px 0px #6d6d6d;
+    text-align: center;
+    /* flexbox interno de la tarjeta 
+    display: flex;
+    /* no quiero que esté como row por default, sino como column 
+    flex-direction: column;
+    /* centrarlo de forma interna tmb 
+    align-items: center;
+
+    /* esto es para hacer el circulito arriba, el padre debe ser relative 
+    position: relative;
+    margin-top:100px
+}
+.equipo-card:hover{
+    box-shadow: 7px 12px 0px #bbbb00;
+    transform: translate(-2px,-2px);
+    transition: .35s ease;
+
+}
+
+.equipo-foto{
+
+    width: 140px;
+    height: 140px;
+    /* para no deformar la imagen: 
+    object-fit: cover;
+
+    /* hacerla circular 
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+
+    /* esto para moverlo arriba 
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.equipo-titulo{
+    margin-top: 15px;
+    color: #2D3436;
+    font-size: 19px;
+}
+
+.equipo-rol{
+    font-size: 14px;
+    color: #2d3436;
+    margin: 5px;
+}
+
+
+.equipo-descripcion{
+    font-size: 14px;
+    color: #000000;
+    margin: 5px;
+    line-height: 1;
+
+} */
+
+
+
+/* botón flotante posicion fixed */
