@@ -856,25 +856,36 @@ input[type="file"]{
 
 /* pie de pagina */
 footer{
-    background-color: #2d3436;
+    background-color: #1a1a1a;
     color: #FEFEFE;
-    padding: 25px 20px;
+    padding-bottom: 25px;
+}
+.footer-section{
+    background-color: #1a1a1a;
 }
 /* lista y enlaces de footer */
 .footer-lista{
     list-style-type: none;
     font-size: 16px;
+    display: flex;
+    margin: 25px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-lista a{
-    text-decoration: none;
-    color: #FEFEFE;
-    transition: .25s;
+.footer-lista img{
+    border-radius: 20px;
+    width: 40px;
+    object-fit: contain;
+
 }
 
-.footer-lista a:hover{
+
+.footer-lista img:hover{
     color: #6C5CE7;
-    
+    transform: translate(-5px,-5px);
+    transition: .25s ease;
 }
 
 #footer-copyright{
