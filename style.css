@@ -112,7 +112,6 @@ header,main{
     align-items: center;
     justify-content: center;
     background: none;
-    border: none;
     background-color: #e60012;
     width: 50px;
     cursor: pointer;
@@ -128,6 +127,34 @@ header,main{
     height: 25px;
     object-fit: cover;
 }
+
+.carrito-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrito-boton{
+    display: flex;
+    background: none;
+    background-color: #e60012;
+    width: 50px;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px;
+    border: 2px solid #000000;
+}
+#carrito-compras{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+#carrito-compras:hover{
+    background-color: #940410;
+}
+
+
+
 /* el vídeo que está abajo del nav */
 
 #video-contenedor{
