@@ -459,15 +459,25 @@ section p{
 .sobre-textos{
     flex: 1 1 300px;
     margin:30px;
-    text-align: justify;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .sobre-texto{
     padding-bottom: 20px;
-    font-size: large;
+    font-size: 20px;
 }
 /* esto es solo para cambiarle d color a dos textos xd */
 .hoshi{
     color: #bbbb00;
+}
+.hoshi:hover{
+    font-weight: 900;
+    color: #e60012;
+    transform: translate(-5px,-5px);
+    transition: .25s ease;
 }
 
 /* partecita de personas que forman parte del tim, está abajo esto de sobre nosotros pero en el mismo sobre nosotros */
@@ -730,6 +740,16 @@ section p{
 
 .contacto-info{
     margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-info p{
+    margin: 20px;
+}
+.contacto-info b{
+    color: #940410;
 }
 /* el flex-grow en 1 y flex shrin en 1, flex basis en 270px
 en todo caso, 1 es q crezca normal o se encoja normal, entonces 1 - 1 es
@@ -740,9 +760,6 @@ para que crezcan y se encojan de igual forma los elementos
     flex: 1 1 280px;
 }
 
-
-
-
 .contacto-form{
     display: flex;
     flex-direction: column;
@@ -752,20 +769,17 @@ para que crezcan y se encojan de igual forma los elementos
     background-color: #2D3436;
     color: white;
     padding: 20px;
-    border-radius: 20px;
 }
 
 .contacto-form input {
     height: 40px;
     width: 320px;
-    border-radius: 15px;
-    border: none;
+    border: 2px solid black;
     padding: 10px;
 }
 #solicitud{
     width: 320px;
     height: 90px;
-    border-radius: 15px;
     padding: 10px;
     border: none;
 }
