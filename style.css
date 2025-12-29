@@ -144,15 +144,16 @@ header,main{
     padding: 6px;
     border: 2px solid #000000;
 }
+
+#carrito-boton:hover{
+    background-color: #940410;
+}
+
 #carrito-compras{
     width: 25px;
     height: 25px;
     object-fit: cover;
 }
-#carrito-compras:hover{
-    background-color: #940410;
-}
-
 
 
 /* el vídeo que está abajo del nav */
@@ -631,11 +632,11 @@ section p{
 
 /* botones laterales */
 
-.boton-carrito{
-    padding: 10px;
-    border-radius: 30px;
+.boton-whatsapp{
+    padding: 7px;
+    border: 2px solid #000000;
     color: white;
-    background-color: rgb(37, 116, 116);
+    background-color: #e60012;
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
@@ -650,21 +651,29 @@ section p{
 
     /* se pone el z index para que se pueda visualizar FRENTE DE TOD */
     z-index: 1500;
+    
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.boton-carrito:hover{
+.boton-whatsapp img{
+    width: 40px;
+    object-fit: contain;
+}
+.boton-whatsapp:hover{
     background-color: rgb(28, 90, 90);
-
+    transform: scale(1.1);
 }
 
 .boton-subir{
     width: 50px;
     height: 50px;
-    background-color: rgb(37, 116, 116);
+    background-color: #e60012;
+    border: 2px solid #000000;
     display: block;
-    border-radius: 30px;
-    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.25);
-    transition: .2s;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+    transition: .2s ease;
     bottom: 13px;
     left: 25px;
     z-index: 1500;
@@ -673,8 +682,9 @@ section p{
 }
 
 .boton-subir:hover{
-    background-color: rgb(28, 90, 90);
-
+    background-color: rgb(0, 0, 0);
+    box-shadow: 12px 12px 0px #e60012;
+    transform: translate(-5px,-5px);
 }
 
 #img-boton-subir{
@@ -910,9 +920,9 @@ footer{
 
 
 .footer-lista img:hover{
-    color: #6C5CE7;
     transform: translate(-5px,-5px);
     transition: .25s ease;
+    box-shadow: 6px 6px 0px #e60012;
 }
 
 #footer-copyright{
