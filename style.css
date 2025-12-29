@@ -351,6 +351,9 @@ section p{
 
 .producto-btn:hover{
     background-color: #000000;
+    transition: .25s ease;
+    transform: translate(-4px,-4px);
+    box-shadow: 6px 6px 0px #e60012;
 }
 
 /* OFERTOON */
@@ -773,6 +776,12 @@ para que crezcan y se encojan de igual forma los elementos
     color: #2D3436;
     padding: 20px;
 }
+.contacto-form:hover{
+    box-shadow: 6px 6px 0px #bbbb00;
+    transform: translate(-6px,-6px);
+    transition: .35s ease;
+
+}
 .contacto-form label{
     font-weight: 700;
 }
@@ -828,13 +837,18 @@ input[type="file"]{
 .contacto-form button{
     height: 40px;
     width: 320px;
-    background-color: #6C5CE7;
+    background-color: #e60012;
+    font-weight: 700;
     border: 2px solid black;
     color: white;
     
 }
 .contacto-form button:hover{
-    background-color: #6d4c41
+    background-color: #000000;
+    transition: .25s ease;
+    transform: translate(-4px,-4px);
+    box-shadow: 6px 6px 0px #e60012;
+    
 }
 
 
